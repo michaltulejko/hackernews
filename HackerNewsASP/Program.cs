@@ -46,7 +46,7 @@ app.MapGet("/news/best/{number:int}",
 
         return !validationResult.IsValid
             ? Results.BadRequest(validationResult.Errors)
-            : Results.Ok((object?)await service.GetBestStoriesAsync(number));
+            : Results.Ok(await service.GetBestStoriesAsync(number));
     });
 
 app.Run();
