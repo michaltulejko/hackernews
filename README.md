@@ -1,9 +1,40 @@
-Application running on .NET 9 with .Net Aspire for orchestration
-Before you start the app, make sure you have running docker on your machine, for Redis.
+# HackerNewsASP – .NET 9 and .NET Aspire
 
-To start the app run commands from the main directory
-Running application: `dotnet run --project .\HackerNewsASP.AppHost\`
-Running tests: `dotnet test`
-	
-Aspire Dashboard will be available on `https://localhost:17258` remember to use the URL from the console as there is a login token.
-Swagger is available on `https://localhost:7151/swagger/index.html` without authorization.
+This application is orchestrated with **.NET 9** and **.NET Aspire**.
+
+## Prerequisites
+
+- **Docker** installed and running (required for Redis).
+
+## Getting Started
+
+1. **Clone or download** the repository.
+2. **Ensure Docker is running** so Redis can be pulled and launched if needed.
+
+## Running the Application
+
+From the main directory, run:
+
+```bash
+dotnet run --project .\HackerNewsASP.AppHost\
+```
+
+This launches the **HackerNewsASP.AppHost** project.
+
+## Running Tests
+
+```bash
+dotnet test
+```
+
+## Additional Info
+
+- **Aspire Dashboard**  
+  Once the application is running, the Aspire dashboard is available at  
+  `https://localhost:17258`  
+  Use the exact URL from your console output—it includes a **login token**.
+
+- **Swagger**  
+  Available at:  
+  `https://localhost:7151/swagger/index.html`  
+  No authorization is required to access Swagger.
