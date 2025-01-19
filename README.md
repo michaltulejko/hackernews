@@ -38,3 +38,15 @@ dotnet test
   Available at:  
   `https://localhost:7151/swagger/index.html`  
   No authorization is required to access Swagger.
+
+
+## Assumptions
+- Api does not need to have fresh results every time it is called
+- There is no need for a fully fledge controller
+- User must request at least 1 article
+
+## Given time
+- Reconsider access to best articles, perhaps with pooling
+- Better error handling
+- More tests
+- Add K6 for load testing
